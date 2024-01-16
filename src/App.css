@@ -1,8 +1,38 @@
 .App {
   text-align: center;
   display: flex;
-  background-color: #282c34;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #282c34; */
+  background: hsla(351, 100%, 25%, 1);
+  background: linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7F0012", endColorstr="#1B0A07", GradientType=1 );
   height: 100vh;
+}
+.title{
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+  padding-top: -10px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* anchor tag color change*/
+a {
+  color: gray;
+  font-weight: bold;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 45%;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 
