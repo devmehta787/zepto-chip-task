@@ -1,0 +1,88 @@
+.chip-container {
+  width: 90%;
+  margin: 50px auto;
+  /* align item center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected-chip-container {
+    width: 90%;
+    height: 40px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selected-chips {
+    display: flex;
+}
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.chip-input {
+    top: 50%;
+    width: 40%;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.chip-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.chip {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.chip:hover {
+  background-color: #A9A9A9;
+}
+/* change color on click */
+.chip-active {
+  background-color: #A9A9A9;
+}
+
+.chip-remove {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.all-chip {
+    /* make this posiiton fixed on the bottom 30% of screen */
+    position: fixed;
+    /* background-color: black; */
+
+    padding-bottom: 15px;
+    bottom: 30%;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 30%;
+    color: #ffff;
+}
+.list-bottom {
+    display: flex;
+    flex-direction: wrap;
+    margin-top: 10px;
+}
