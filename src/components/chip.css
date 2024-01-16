@@ -1,6 +1,7 @@
 .chip-container {
   width: 90%;
   margin: 50px auto;
+  margin-top: 0px;
   /* align item center */
   display: flex;
   flex-direction: column;
@@ -17,6 +18,15 @@
 }
 .selected-chips {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.input-suggestion {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
 }
 .input {
     width: 100%;
@@ -36,6 +46,8 @@
 .chip-list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
 }
 .chip {
@@ -62,10 +74,10 @@
 
 .all-chip {
     /* make this posiiton fixed on the bottom 30% of screen */
-    position: fixed;
+    /* position: fixed; */
     /* background-color: black; */
 
-    padding-bottom: 15px;
+    padding-top: 15px;
     bottom: 30%;
     width: 90%;
     margin: 50px auto;
@@ -78,11 +90,22 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    width: 30%;
+    width: 50%;
     color: #ffff;
 }
 .list-bottom {
     display: flex;
-    flex-direction: wrap;
+    flex-direction: row;
+    max-width: 90%;
     margin-top: 10px;
+}
+.chip-data {
+  border: 2px solid white;
+  border-radius: 10%;  
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #ffff;
 }

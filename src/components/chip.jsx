@@ -55,25 +55,27 @@ const ChipComponent = () => {
                     ))}
                 </div>
             </div>
-            <div className="input">
-                <input
-                    className="chip-input"
-                    type="text"
-                    value={inputValue}
-                    onChange={handleInputChange}
-                    placeholder="Type any name from the list below..."
-                />
-            </div>
-            <div className="suggested-chip">
-                {inputValue.trim() !== '' && (
-                    <div className="chip-list">
-                        {updateChips().map(item => (
-                            <div key={item} className="chip" onClick={() => handleChipClick(item)}>
-                                {item}
-                            </div>
-                        ))}
-                    </div>
-                )}
+            <div className="input-suggestion">
+                <div className="input">
+                    <input
+                        className="chip-input"
+                        type="text"
+                        value={inputValue}
+                        onChange={handleInputChange}
+                        placeholder="Type any name from the list below..."
+                    />
+                </div>
+                <div className="suggested-chip">
+                    {inputValue.trim() !== '' && (
+                        <div className="chip-list">
+                            {updateChips().map(item => (
+                                <div key={item} className="chip" onClick={() => handleChipClick(item)}>
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
             <div className="all-chip">
                 <div className="list-top">
@@ -81,7 +83,7 @@ const ChipComponent = () => {
                 </div>
                 <div className="list-bottom">
                     {items.map(item => (
-                        <div key={item} className="chip">
+                        <div key={item} className="chip-data">
                             {item}
                         </div>
                     ))}
